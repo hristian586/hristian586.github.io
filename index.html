@@ -11,8 +11,14 @@
 	<link rel="stylesheet" type="text/css" href="resume.css" media="all" />
 	<link rel="stylesheet" type="text/css" href="ignore.css" media="all" />	
 
-</head>
-<body>
+	<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/agate.min.css">
+	  
+	  
+	</head>
+	<body>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 <div id="doc2" class="yui-t7">
 	<div id="inner">
 		<img src="me.jpg" alt="My Photo">
@@ -151,8 +157,9 @@
 <div class = "box" > 
 	<p> Program in C for checking if a credit card number is valid </p>
 	<pre>
-#include <cs50.h>
-#include <stdio.h>
+		<code class="cal">
+#include &lt;cs50.h&gt;
+#include &lt;stdio.h&gt;
 			
 string check_card(int four, int TwoNumb, int sum_lastDigit, int count);
 long long get_Num(void);
@@ -289,16 +296,18 @@ int get_first(long long Num)
 		four /= 10;
 	}
 	return four;
-}
+}		</code>
 	</pre>
 </div>
 
 <div class = "box" > 
 	<p> Program in C for ranking candidates in an election </p>
 	<pre>
-#include <cs50.h>
-#include <stdio.h>
-#include <string.h>
+		<code class="cal">	
+#include &lt;cs50.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+#include &lt;string.h&gt;
 
 // Max voters and candidates
 #define MAX_VOTERS 100
@@ -514,13 +523,14 @@ void eliminate(int min)
 	// TODO
 	return;
 }
-
+		</code>
 	</pre>
 </div>
 
-<div class = "box" >\
+<div class = "box" >
 	<p> SQL Code for Bus Station </p> 
 	<pre>
+		<code class="sql">	
 -- Create a table for bus routes
 CREATE TABLE routes (
 	route_id INTEGER PRIMARY KEY,
@@ -564,6 +574,7 @@ CREATE TABLE stop_times (
 	FOREIGN KEY (trip_id) REFERENCES trips(trip_id),
 	FOREIGN KEY (stop_id) REFERENCES stops(stop_id)
 );
+		</code>
 	</pre>
 </div>
 

@@ -1,6 +1,6 @@
 img {
-    width: 200px; /* Sets the width of the image */
-    height: 200px; /* Sets the height of the image */
+    width: 150px; /* Sets the width of the image */
+    height: 150px; /* Sets the height of the image */
   }
   
 
@@ -62,16 +62,14 @@ p.enlarge span { color: #000 }
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
 
-#inner img {
-  border-radius: 5px;
-}
+
 
 .box {
   text-align: left;
   border-radius: 10px;
   background-color: rgb(34, 34, 34);
   color: aliceblue; 
-  padding: 20px 50px;
+  padding: 20px 10px;
   margin: 10px 90px;
 }
 
